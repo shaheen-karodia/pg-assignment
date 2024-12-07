@@ -12,6 +12,9 @@ export default {
       "dark-grey": "#24232C",
       "very-dark-grey": "#18171F",
     },
+    fontFamily: {
+      mono: ["JetBrains Mono", "monospace"],
+    },
     extend: {},
   },
   plugins: [],
