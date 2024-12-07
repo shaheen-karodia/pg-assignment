@@ -1,10 +1,12 @@
+import Typography from "./components/typography";
+
 function App() {
   return (
-    <>
+    <main className="bg-very-dark-grey min-h-screen">
       <div>
-        <h1 className="text-3xl font-bold underline font-mono">
+        <Typography element="h1" treatment="heading-m" className="text-grey ">
           Password Generator
-        </h1>
+        </Typography>
         P4$5W0rD! Character Length Include Uppercase Letters Include Lowercase
         Letters Include Numbers Include Symbols Strength Generate
       </div>
@@ -16,7 +18,7 @@ function App() {
       <div className="w-7 h-5 bg-grey" />
       <div className="w-7 h-5 bg-dark-grey" />
       <div className="w-7 h-5 bg-very-dark-grey" />
-    </>
+    </main>
   );
 }
 
