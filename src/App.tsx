@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import CheckBox from "./components/CheckBox";
 import Container from "./components/Container";
 import PasswordField from "./components/PasswordField";
 import PasswordLengthSlider from "./components/PasswordLengthSlider";
@@ -15,8 +16,42 @@ function App() {
         <PasswordField password="P4$5W0rD!" />
         <div className="bg-dark-grey p-8">
           <PasswordLengthSlider />
-          Character Length Include Uppercase Letters Include Lowercase Letters
-          Include Numbers Include Symbols Strength
+
+          <CheckBox
+            label="Character Length"
+            checked={false}
+            onChange={() => {
+              console.log("TODO");
+            }}
+          />
+          <CheckBox
+            label="Include Uppercase Letters"
+            checked={true}
+            onChange={() => {
+              console.log("TODO");
+            }}
+          />
+          <CheckBox
+            label="Include Lowercase Letters"
+            checked={true}
+            onChange={() => {
+              console.log("TODO");
+            }}
+          />
+          <CheckBox
+            label="Include Numbers"
+            checked={true}
+            onChange={() => {
+              console.log("TODO");
+            }}
+          />
+          <CheckBox
+            label="Include Symbols"
+            checked={true}
+            onChange={() => {
+              console.log("TODO");
+            }}
+          />
           <PasswordStrengthIndicator strength="strong" className="mb-8" />
           <Button
             onClick={() => {
