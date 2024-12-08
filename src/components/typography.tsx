@@ -1,18 +1,5 @@
 import { ReactNode } from "react";
-import { cva } from "class-variance-authority";
-
-const typography = cva(["font-mono", "font-bold"], {
-  variants: {
-    treatment: {
-      "heading-l": ["text-4xl", "leading-[43px]"],
-      "heading-m": ["text-2xl", "leading-[31px]"],
-      body: ["text-lg", "leading-[23px]"],
-    },
-  },
-  defaultVariants: {
-    treatment: "body",
-  },
-});
+import { typography } from "../utils/typography";
 
 interface TypographyProps {
   children: ReactNode;

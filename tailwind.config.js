@@ -11,6 +11,7 @@ export default {
       grey: "#817D92",
       "dark-grey": "#24232C",
       "very-dark-grey": "#18171F",
+      transparent: "transparent",
     },
     fontFamily: {
       mono: ["JetBrains Mono", "monospace"],
