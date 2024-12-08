@@ -1,6 +1,7 @@
 import Button from "./components/Button";
 import Container from "./components/Container";
 import PasswordField from "./components/PasswordField";
+import PasswordStrengthIndicator from "./components/PasswordStrengthIndicator";
 import Typography from "./components/Typography";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           reprehenderit voluptatum ipsum quibusdam omnis praesentium repellendus
           nam non? Quaerat aliquam ducimus cum neque nesciunt temporibus, ab
           dolores quisquam suscipit itaque aut laborum nulla voluptatum est a
+          <PasswordStrengthIndicator strength="strong" className="mb-8" />
           <Button
             onClick={() => {
               console.log("TODO");
